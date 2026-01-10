@@ -1,5 +1,8 @@
 const express=require('express')
+const dotenv=require('dotenv')
+const mongoose=require('mongoose')
 const app=express()
+dotenv.config()
 const port=5000
 app.get('/',(req,res)=>{res.send("hello world")})
 app.use('/home',(res,req)=>{res.send("Welcome to home page")})
